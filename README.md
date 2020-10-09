@@ -1,0 +1,1 @@
+Fiz uma calculadorazinha basica como desafio. Ela não está completa, vou altera-la mais pra frente, ainda falta fazer com q ela aceite numeros decimais.
