@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style type="text/css">
+        .calculadora {
+            margin-top: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container calculadora">
+        <div class="row">
+            <div class="col">
+                <div class="col">
+                    <div class="row justify-content-center">
+                        <h1>Calculadora</h1>
+                    </div>
+
+                    <form name="calcform" method="post" action="">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="visor" id="visor" />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <button type="button" name="num9" value="9" onclick="calcNum(9)"
+                            class="btn btn-secondary  btn-lg form-control num">9</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" name="num9" value="8" onclick="calcNum(8)"
+                            class="btn btn-secondary  btn-lg form-control num">8</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" name="num9" value="7" onclick="calcNum(7)"
+                            class="btn btn-secondary  btn-lg form-control num">7</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" name="num9" value="+" onclick="calcParse('somar')"
+                            class="btn  btn-primary  btn-lg form-control oper">+</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <button type="button" name="num9" value="4" onclick="calcNum(4)"
+                            class="btn btn-secondary  btn-lg form-control num">4</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" name="num9" value="5" onclick="calcNum(5)"
+                            class="btn btn-secondary  btn-lg form-control num">5</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" name="num9" value="6" onclick="calcNum(6)"
+                            class="btn btn-secondary  btn-lg form-control num">6</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" name="num9" value="+" onclick="calcParse('subtrair')"
+                            class="btn  btn-primary  btn-lg form-control oper">-</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <button type="button" name="num9" value="1" onclick="calcNum(1)"
+                            class="btn btn-secondary  btn-lg form-control num">1</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" name="num9" value="2" onclick="calcNum(2)"
+                            class="btn btn-secondary  btn-lg form-control num">2</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" name="num9" value="3" onclick="calcNum(3)"
+                            class="btn btn-secondary  btn-lg form-control num">3</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" name="num9" value="+" onclick="calcParse('multiplicar')"
+                            class="btn  btn-primary  btn-lg form-control oper">*</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <button type="button" name="num9" value="0" onclick="calcNum(0)"
+                            class="btn btn-secondary  btn-lg form-control num">0</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="calcParse('resultado')"
+                            class="btn btn-success  btn-lg form-control">=</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="calcLimpar()"
+                            class="btn btn-outline-danger  btn-lg form-control">AC</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="calcParse('dividir')"
+                            class="btn  btn-primary  btn-lg form-control">/</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="controls.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
